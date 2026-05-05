@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo">WeatherDash</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-section slide-up">
+    <div class="container">
+      <h1 class="page-title">Realtime Weather Dashboard</h1>
+
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name..." />
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <section class="hero-card glass">
+        <div class="left">
+          <h2 id="cityName">Belagavi</h2>
+          <p id="dateTime">Loading date & time...</p>
+          <div class="temp-row">
+            <img id="weatherIcon" src="" alt="Weather Icon" />
+            <h1 id="temperature">--°C</h1>
+          </div>
+          <p id="weatherCondition">Clear Sky</p>
+        </div>
+
+        <div class="right">
+          <div class="mini-card glass">
+            <h3>Feels Like</h3>
+            <p id="feelsLike">--°C</p>
+          </div>
+          <div class="mini-card glass">
+            <h3>Humidity</h3>
+            <p id="humidity">--%</p>
+          </div>
+          <div class="mini-card glass">
+            <h3>Wind</h3>
+            <p id="windSpeed">-- km/h</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics">
+        <div class="metric glass">
+          <h3>Pressure</h3>
+          <p id="pressure">-- hPa</p>
+        </div>
+        <div class="metric glass">
+          <h3>Visibility</h3>
+          <p id="visibility">-- km</p>
+        </div>
+        <div class="metric glass">
+          <h3>Sunrise</h3>
+          <p id="sunrise">--:--</p>
+        </div>
+        <div class="metric glass">
+          <h3>Sunset</h3>
+          <p id="sunset">--:--</p>
+        </div>
+      </section>
+
+      <section class="forecast-section">
+        <h2 class="page-title" style="font-size: 1.8rem;">5-Day Forecast</h2>
+        <div id="forecastContainer" class="forecast-grid"></div>
+      </section>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Weather Dashboard | Made by Chandu</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
